@@ -28,7 +28,5 @@ public class BusquedaBinaria {
         if (!adivinado) {
             System.out.println("Al parecer tu numero no esta entre 1 y 100 intentelo de nuevo. Asegurate de responder correctamente.");
         }
- 
-        scanner.close();
     }
 }
