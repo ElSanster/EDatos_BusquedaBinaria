@@ -10,17 +10,17 @@ public class BusquedaBinaria {
  
         System.out.println("Piensa en un numero entre " + min + " y " + max + ". Yo intentare adivinarlo.");
         while (!adivinado && min <= max) {
-            int guess = (min + max) / 2;
-            System.out.println("¿Es " + guess + " tu numero? (responde 'si', 'mayor' o 'menor')");
+            int adivina = (min + max) / 2;
+            System.out.println("¿Es " + adivina + " tu numero? (responde 'si', 'mayor' o 'menor')");
             String respuesta = scanner.nextLine().trim().toUpperCase();
             intentos++;
             if (respuesta.equals("SI")) {
-                System.out.println("¡He adivinado tu numero!: Es " + guess);
+                System.out.println("¡He adivinado tu numero!: Es " + adivina);
                 adivinado = true;
             } else if (respuesta.equals("MAYOR")) {
-                min = guess + 1;
+                min = adivina + 1;
             } else if (respuesta.equals("MENOR")) {
-                max = guess - 1;
+                max = adivina - 1;
             } else {
                 System.out.println("Entrada no valida. Por favor, responde solo con 'si', 'mayor' o 'menor'.");
             }
