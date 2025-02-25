@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MamadaNicolas {
+public class BusquedaBinaria {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int min = 1;
